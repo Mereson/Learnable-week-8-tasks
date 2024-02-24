@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+img {
+  width: 25px;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  background: #fff;
+  height: 100vh;
+}
+
+#cross-tape {
+  width: 170px;
+  position: fixed;
+  top: 105px;
+  left: 315px;
+}
+
+#cross-tape2 {
+  width: 170px;
+  position: absolute;
+  top: 105px;
+  left: 885px;
+}
+
+.todo-list {
+  /* margin-top: 60px; */
+  padding: 50px;
+  background: rgb(241, 245, 248);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 35%;
+  border-radius: 20px;
+  transition: 500ms;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.349);
+}
+
+.todo-list:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.699);
+}
+
+.message {
+  font-size: 13px;
+  padding: 3px 5px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.added {
+  color: #155724;
+  background: #d4edda;
+}
+.empty {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  width: 100%;
+}
+
+form input {
+  margin: 0;
+  padding: 5px 10px;
+  height: 100%;
+  width: 80%;
+  font-size: 15px;
+  background: rgb(227, 238, 247);
+  border: none;
+  outline: none;
+  border-radius: 7px 0 0 7px;
+}
+form button {
+  margin: 0;
+  padding: 5px 10px;
+  width: 20%;
+  height: 100%;
+  box-sizing: content-box;
+  border: none;
+  outline: none;
+  background: rgb(0, 194, 243);
+  font-size: 15px;
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.todo-list section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.todo-list section .list-article {
+  width: 100%;
+}
+
+.todo-list section .list-article .new-task {
+  margin: 7px 0;
+  transition: 500ms;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: rgba(184, 194, 204, 0.123);
+}
+
+.todo-list section .list-article .new-task:hover {
+  background: rgba(184, 194, 204, 0.616);
+}
+
+.todo-list section .list-article .new-task p {
+  width: 60%;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: capitalize;
+}
+
+.todo-list section .list-article .new-task div {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-list section .list-article .new-task div figure {
+  cursor: pointer;
+}
+
+.clear-all {
+  margin: 10px 0 0 0;
+  outline: 0;
+  border: 0;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 500ms;
+  color: rgb(207, 76, 76);
+}
+
+.clear-all:hover {
+  color: rgb(235, 12, 12);
+}
+
+@media (max-width: 800px) {
+  .todo-list {
+    width: 60%;
+  }
+}
